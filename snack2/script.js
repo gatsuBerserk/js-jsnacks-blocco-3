@@ -4,17 +4,16 @@
     Ogni volta che ne crei uno, stampalo a schermo.
  */ 
 
-const n= parseInt(prompt("Inserisci un numero")); 
-console.log(n); 
+const userNumber= parseInt(prompt("inserisci un numero:")); 
+while (isNaN (userNumber)){
+    userNumber= parseInt(prompt("inserisci un numero:")); 
+}
 
-const array=[]; 
-
-let i = 0; 
-while(i < 10){ 
-    let number= (Math.floor(Math.random()*10)+1);
-    array.push(number); 
-
-    i++;
-}; 
-
-console.log(array);
+for (i = 0; i < userNumber; i++){
+    const tempArray=[]; 
+    while (tempArray.length < 10){
+        tempArray.push(Math.floor(Math.random()* 4532) + 4);
+    
+ }
+    console.log(tempArray);
+}
